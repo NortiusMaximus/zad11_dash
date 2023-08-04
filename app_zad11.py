@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+#os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 import dash
 from dash import dcc
