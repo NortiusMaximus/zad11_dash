@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/python3/bin && pip install gunicorn && gunicorn app:app
+gunicorn==19.7.1
 dash==2.6.0
 pandas
 numpy
