@@ -8,7 +8,7 @@ import dash
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
-import dash_auth
+#import dash_auth
 
 import plotly.graph_objects as go
 import plotly.express as px
@@ -80,6 +80,8 @@ df.merge()
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server=app.server
+
 app.config.suppress_callback_exceptions=True
 
 #layout
@@ -195,9 +197,9 @@ def filter_bars(rows):
     fig.update_layout(title_text='Średnia wartość transakcji w zależności od płci i kanału',title_x=0.5)
     return fig
 
-USERNAME_PASSWORD = [['user','pass']]
-auth = dash_auth.BasicAuth(app,USERNAME_PASSWORD)
+#USERNAME_PASSWORD = [['user','pass']]
+#auth = dash_auth.BasicAuth(app,USERNAME_PASSWORD)
 
-#serwer w trybie developerskim
+
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
