@@ -19,16 +19,16 @@ import tab3
 class db:
     def __init__(self):
         self.transactions = db.transaction_init()
-        self.cc = pd.read_csv(r'opt\render\project\src\db\country_codes.csv',index_col=0)
-        self.customers = pd.read_csv(r'opt\render\project\src\db\customers.csv',index_col=0)
-        self.prod_info = pd.read_csv(r'opt\render\project\src\db\prod_cat_info.csv')
+        self.cc = pd.read_csv(r'opt/render/project/src/db/country_codes.csv',index_col=0)
+        self.customers = pd.read_csv(r'opt/render/project/src/db/customers.csv',index_col=0)
+        self.prod_info = pd.read_csv(r'opt/render/project/src/db/prod_cat_info.csv')
 
 
     #łączenie transakcji i formatowanie dat
     @staticmethod
     def transaction_init():
         transactions = pd.DataFrame()
-        src = r'opt\render\project\src\db\transactions'
+        src = r'opt/render/project/src/db/transactions'
         for filename in os.listdir(src):
             #transactions = transactions.append(pd.read_csv(os.path.join(src,filename),index_col=0))
             #append jest depreciated
