@@ -4,7 +4,7 @@ numpy
 datetime
 os
 dash.dependencies
-dash_auth
+
 
 plotly.graph_objects
 plotly.express
