@@ -2,9 +2,5 @@ dash==2.6.0
 pandas
 numpy
 datetime
+plotly
 
-dash.dependencies
-
-
-plotly.graph_objects
-plotly.express
